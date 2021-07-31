@@ -1,0 +1,388 @@
+{
+  "nodes": {
+    "bbb": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625747321,
+        "narHash": "sha256-2wva+FMy/keiD0tq7emKrCw4847pv+UIIwX24xqeITs=",
+        "owner": "helsinki-systems",
+        "repo": "bbb4nix",
+        "rev": "21340954e43f469d8f6047831c993be2ccd6c75f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "helsinki-systems",
+        "repo": "bbb4nix",
+        "type": "github"
+      }
+    },
+    "dns": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1597480140,
+        "narHash": "sha256-Zz0McVTWaTr73rjj4CZAqDdniY+iTyN/nTrAdabbpZY=",
+        "owner": "kloenk",
+        "repo": "nix-dns",
+        "rev": "f1b6c25b308538358642a0578ac8bde40e54e998",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kloenk",
+        "repo": "nix-dns",
+        "type": "github"
+      }
+    },
+    "event_start": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1614019030,
+        "narHash": "sha256-1cKltiDAz02ewI277rmFptcjQARBhRhJiRHQadeOXWI=",
+        "owner": "holbeh",
+        "repo": "eventstart",
+        "rev": "6f501bbb58510ecb89abffae54cbd43d238667dc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "holbeh",
+        "ref": "postshow",
+        "repo": "eventstart",
+        "type": "github"
+      }
+    },
+    "fediventure": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611601382,
+        "narHash": "sha256-7INzsw6OfIQ067j8jyzBiKcbAATUj4C+3GZRvREome8=",
+        "owner": "kloenk",
+        "repo": "fediventure",
+        "rev": "284da3c1ed5b093275f0754e02b271c767cac817",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "kloenk",
+        "ref": "jitsi",
+        "repo": "fediventure",
+        "type": "gitlab"
+      }
+    },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606424373,
+        "narHash": "sha256-oq8d4//CJOrVj+EcOaSXvMebvuTkmBJuT5tzlfewUnQ=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "99f1c2157fba4bfe6211a321fd0ee43199025dbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "grahamc-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605133335,
+        "narHash": "sha256-7p3fE9Jc/0mQJ1WhMB0RsSeICrB7HzmQ6Spu2UEtNSY=",
+        "owner": "grahamc",
+        "repo": "nixos-config",
+        "rev": "35388280d3b06ada5882d37c5b4f6d3baa43da69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "grahamc",
+        "repo": "nixos-config",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1621417094,
+        "narHash": "sha256-Csk4p8jFUma7FtMnjEJGTPGxCOnTbb30xr8AXwrUTMM=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "3d18912f5ae7c98bd5249411d98cdf3b28fe1f09",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "kloenk": {
+      "inputs": {
+        "dns": "dns",
+        "event_start": "event_start",
+        "fediventure": "fediventure",
+        "flake-compat": "flake-compat",
+        "grahamc-config": "grahamc-config",
+        "home-manager": "home-manager",
+        "hydra": [
+          "nixpkgs"
+        ],
+        "mail-server": "mail-server",
+        "mixnix": "mixnix",
+        "nix": "nix",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "office-map": "office-map",
+        "petabyte": "petabyte",
+        "rtmp-auth": "rtmp-auth",
+        "website": "website",
+        "workadventure": "workadventure"
+      },
+      "locked": {
+        "lastModified": 1627672970,
+        "narHash": "sha256-nERMQ6620U1dmPV4aMzQ8saI2qTpkyBZlqP2nfA8o40=",
+        "ref": "master",
+        "rev": "fcd1fb8ccb22e763c6c30923fd3fca4a04b6f091",
+        "revCount": 704,
+        "type": "git",
+        "url": "https://git.kloenk.dev/kloenk/nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.kloenk.dev/kloenk/nix"
+      }
+    },
+    "lowdown-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617481909,
+        "narHash": "sha256-SqnfOFuLuVRRNeVJr1yeEPJue/qWoCp5N6o5Kr///p4=",
+        "owner": "kristapsdz",
+        "repo": "lowdown",
+        "rev": "148f9b2f586c41b7e36e73009db43ea68c7a1a4d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kristapsdz",
+        "ref": "VERSION_0_8_4",
+        "repo": "lowdown",
+        "type": "github"
+      }
+    },
+    "lowdown-src_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617481909,
+        "narHash": "sha256-SqnfOFuLuVRRNeVJr1yeEPJue/qWoCp5N6o5Kr///p4=",
+        "owner": "kristapsdz",
+        "repo": "lowdown",
+        "rev": "148f9b2f586c41b7e36e73009db43ea68c7a1a4d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kristapsdz",
+        "ref": "VERSION_0_8_4",
+        "repo": "lowdown",
+        "type": "github"
+      }
+    },
+    "mail-server": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621793738,
+        "narHash": "sha256-Bl4KGFjOQ1nVtnQfvw6e6/YZf/BLGX+9fR+oN+Yr6Qs=",
+        "owner": "simple-nixos-mailserver",
+        "repo": "nixos-mailserver",
+        "rev": "37376efbbf44ac5accaef84ccbbebbdfdc02e95d",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "simple-nixos-mailserver",
+        "ref": "master",
+        "repo": "nixos-mailserver",
+        "type": "gitlab"
+      }
+    },
+    "mixnix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587327380,
+        "narHash": "sha256-+VkwVR1SKS8Bzs0V8E166R3utaB7oSFd2ueH8mHVJjs=",
+        "ref": "master",
+        "rev": "450d1dd2e9550b67db49accf4e67e560add5c32b",
+        "revCount": 3,
+        "type": "git",
+        "url": "https://git.petabyte.dev/petabyteboy/mixnix"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.petabyte.dev/petabyteboy/mixnix"
+      }
+    },
+    "nix": {
+      "inputs": {
+        "lowdown-src": "lowdown-src",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1626870457,
+        "narHash": "sha256-QFWvm+4LBZkMS98YxX+oyiVd5IJloz6WJCo1cO61+34=",
+        "owner": "nixos",
+        "repo": "nix",
+        "rev": "3bb8667a1758ad10b5f8621f7e187c38c9c860c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nix",
+        "type": "github"
+      }
+    },
+    "nix_2": {
+      "inputs": {
+        "lowdown-src": "lowdown-src_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1627654443,
+        "narHash": "sha256-KnMQRMDqidemayib7HUTSbKuxFaLxHUEf9bGq+ajVzo=",
+        "owner": "nixos",
+        "repo": "nix",
+        "rev": "2b67cb7b8c8ac7953f7e341d760bdb3c021fe765",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nix",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1627725807,
+        "narHash": "sha256-un7bjUjlNY2HNG3LzXwLjFvyiHXo299Q0bRkgMo3+to=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "985b3d04f2133c907785db92c76d415169df9398",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "office-map": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613902593,
+        "narHash": "sha256-Cbsv9vZKWNUNWA8MiohokZE/mFrY4E9onY4KHBCHp8w=",
+        "owner": "holbeh",
+        "repo": "office-map",
+        "rev": "0a9a6542bc926f539817ce3fdf1636c8e97489fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "holbeh",
+        "repo": "office-map",
+        "type": "github"
+      }
+    },
+    "petabyte": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617742742,
+        "narHash": "sha256-GwRbgDFtaOO1QayVL5eo2QpAnGFa3dkYLTJx4dC3gs4=",
+        "ref": "main",
+        "rev": "c3b08fe355d08facf2b2d2f0f96050892242cd38",
+        "revCount": 592,
+        "type": "git",
+        "url": "https://git.petabyte.dev/petabyteboy/nixfiles"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "https://git.petabyte.dev/petabyteboy/nixfiles"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bbb": "bbb",
+        "kloenk": "kloenk",
+        "nix": "nix_2",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "rtmp-auth": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1610139977,
+        "narHash": "sha256-KcqB2aAO96aPWYLAKFntWqGxPbeECAb6ctyX8Hayjgo=",
+        "ref": "main",
+        "rev": "e5e4f38adefcba7ca255bfdbdbebf7b823f4a3e0",
+        "revCount": 4,
+        "type": "git",
+        "url": "https://git.kloenk.dev/usee/rtmp-auth"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "https://git.kloenk.dev/usee/rtmp-auth"
+      }
+    },
+    "website": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613647885,
+        "narHash": "sha256-p3r94I75rlWRUFKr7WMsEAffTk4xA9IVvwHNK8RUJws=",
+        "ref": "master",
+        "rev": "c491c6cc4c73eb080f518dfcd1400ecf92730b69",
+        "revCount": 17,
+        "type": "git",
+        "url": "https://git.petabyte.dev/kloenk/website.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.petabyte.dev/kloenk/website.git"
+      }
+    },
+    "workadventure": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611227004,
+        "narHash": "sha256-6AF4T1ctvXzTlhIC8HRk4cb98aa7CY4UeC5Buk/+tyQ=",
+        "owner": "kloenk",
+        "repo": "workadventure-nix",
+        "rev": "b4bfd52e7c27141890a16f913c7a5873fc5a06ef",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "kloenk",
+        "ref": "overlay",
+        "repo": "workadventure-nix",
+        "type": "gitlab"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
