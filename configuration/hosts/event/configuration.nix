@@ -8,7 +8,7 @@
     #./fediventure.nix
     #./jitsi
     #./prosody.nix
-    ./nginx.nix
+    #./nginx.nix
     ./bbb.nix
 
     ../../common
