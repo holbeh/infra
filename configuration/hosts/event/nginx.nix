@@ -13,7 +13,7 @@ let
         } + "/";*/
 in {
 
-  nixpkgs.overlays = [ inputs.event_start.overlay ];
+  #nixpkgs.overlays = [ inputs.event_start.overlay ];
 
   services.nginx.commonHttpConfig = ''
     map $sent_http_content_type $cacheable_types {
