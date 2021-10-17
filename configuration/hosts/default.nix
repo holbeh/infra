@@ -19,5 +19,14 @@ in {
   bbb-testing = makeHost {
     host = "192.168.178.239";
     vm = true;
+    bbb = true;
+  };
+
+  event = makeHost {
+    host = "event.kloenk.dev";
+    vm = false;
+    server = true;
+    bbb = true;
+    prometheusExporters = [ "node-exporter" "nginx-exporter" ];
   };
 }

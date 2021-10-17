@@ -4,6 +4,9 @@
   imports = [
     ./hardware-configuration.nix
 
+    ./wireguard.nix
+    ./bbb.nix
+
     ../../common
   ];
 
@@ -30,6 +33,17 @@
     gzip
     config.nix.package.out
   ];
+
+  fileSystems."/root/.gnupg" = {
+    device = "/persist/data/gnupg-root";
+    fsType = "none";
+    options = [ "bind" ];
+    neededForBoot = true;
+  };
+
+  fileSystems."/persist" = {
+    neededForBoot = true;
+  };
 
   system.stateVersion = "21.05";
 }

@@ -16,9 +16,11 @@
 
   inputs.bbb = {
     type = "github";
-    owner = "helsinki-systems";
+    #owner = "helsinki-systems";
+    owner = "kloenk";
+    ref = "flake";
     repo = "bbb4nix";
-    flake = false;
+    inputs.nixpkgs.follows = "/nixpkgs";
   };
 
   inputs.kloenk.url = "git+https://git.kloenk.dev/kloenk/nix";
@@ -31,6 +33,8 @@
         nix.overlay
         #home-manager.overlay
         self.overlay
+        kloenk.overlay
+        bbb.overlay
         (overlays system)
       ];
 
@@ -47,18 +51,19 @@
 
       # patche modules
       patchModule = system: {
-        /* disabledModules =
+        disabledModules =
              [
-               "services/games/minecraft-server.nix"
-               "tasks/auto-upgrade.nix"
-               "services/networking/pleroma.nix"
-               "services/web-apps/wordpress.nix"
+               #"services/games/minecraft-server.nix"
+               #"tasks/auto-upgrade.nix"
+               #"services/networking/pleroma.nix"
+               #"services/web-apps/wordpress.nix"
+               "services/networking/coturn.nix"
              ];
            imports = [
-             self.nixosModules.autoUpgrade
+             #self.nixosModules.autoUpgrade
            ];
-        */
-        nixpkgs.overlays = [ (overlays system) nix.overlay self.overlay ];
+
+        nixpkgs.overlays = [ (overlays system) nix.overlay self.overlay bbb.overlay ];
       };
 
       overlays = system: final: prev: {
@@ -93,7 +98,7 @@
             nixpkgs.nixosModules.notDetected
             #home-manager.nixosModules.home-manager
             (import (./configuration + "/hosts/${name}/configuration.nix"))
-            #kloenk.nixosModules.secrets
+            self.nixosModules.secrets
             kloenk.nixosModules.nftables
             #kloenk.nixosModules.deluge2
             #kloenk.nixosModules.firefox
@@ -110,9 +115,15 @@
             (nixpkgs.lib.singleton
               (import (nixpkgs + "/nixos/modules/profiles/qemu-guest.nix")))
           else
-            [ ]);
+            [ ]) ++ (if (host.bbb or false) then [
+                bbb.nixosModules.default
+                bbb.nixosModules.helsinki
+            ] else
+              [ ]);
         })) nixosHosts);
 
-      nixosModules = { };
+      nixosModules = {
+        secrets = import ./modules/secrets;
+      };
     };
 }

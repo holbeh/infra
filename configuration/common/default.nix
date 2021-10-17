@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  imports = [ ./kloenk.nix ./schluempfli.nix ];
+  imports = [ ./kloenk.nix ./schluempfli.nix ./nginx.nix ];
 
   boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_latest;
   nix.gc.automatic = lib.mkDefault true;
@@ -87,6 +87,7 @@
     usbutils
     pciutils
     git
+    vim
   ];
 
   environment.variables.EDITOR = "vim";

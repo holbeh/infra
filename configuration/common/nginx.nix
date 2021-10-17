@@ -7,7 +7,9 @@
   networking.firewall.allowedTCPPorts = [ 80 443 ];
   services.nginx = {
     enable = true;
-    package = pkgs.nginxMainline;
+    package = pkgs.nginxMainline.override {
+      modules = with pkgs.nginxModules; [ moreheaders ];
+    };
 
     recommendedGzipSettings = true;
     recommendedOptimisation = true;
