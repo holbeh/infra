@@ -45,6 +45,12 @@
 
   networking.interfaces.enp4s0.useDHCP = true;
   networking.interfaces.enp4s0.tempAddress = "disabled";
+  networking.interfaces.enp4s0.ipv6.addresses = [
+    {
+      address = "2a01:4f8:141:4fc::2";
+      prefixLength = 64;
+    }
+  ];
 
   /*systemd.network.networks."10-dhcp" = {
     name = "e*";

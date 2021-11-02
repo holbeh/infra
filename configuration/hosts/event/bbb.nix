@@ -7,7 +7,7 @@
     services.bigbluebutton.simple = {
         enable = true;
         domain = "event.unterbachersee.de";
-        ips = [ "46.4.108.116" "2001:678:bbc::27" ];
+        ips = [ "46.4.108.116" "2a01:4f8:141:4fc::2" ];
     };
     services.bigbluebutton.greenlight = {
         adminName = "Finn Behrens";
