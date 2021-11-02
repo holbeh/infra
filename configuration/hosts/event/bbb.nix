@@ -12,7 +12,11 @@
     services.bigbluebutton.greenlight = {
         adminName = "Finn Behrens";
         adminEmail = "greenlight@kloenk.dev";
+        secretEnv = config.petabyte.secrets."greenlight".path;
     };
 
     systemd.services.bbb-greenlight.environment.DB_HOST = lib.mkForce "/var/run/postgresql";
+
+    petabyte.secrets."greenlight".owner = "greenlight";
+    users.users.greenlight.extraGroups = [ "keys" ];
 }
