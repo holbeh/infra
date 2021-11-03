@@ -57,8 +57,8 @@
   services.vnstat.enable = lib.mkDefault true;
   security.sudo.wheelNeedsPassword = false;
 
-  petabyte.nftables.enable = true;
-  petabyte.nftables.forwardPolicy = lib.mkDefault "drop";
+  nftables.enable = true;
+  nftables.forwardPolicy = lib.mkDefault "drop";
 
   services.journald.extraConfig = "SystemMaxUse=2G";
 
