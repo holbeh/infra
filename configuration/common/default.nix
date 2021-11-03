@@ -10,7 +10,7 @@
 
   nix.registry.infra = {
     from.type = "indirect";
-    from.id = "kloenk";
+    from.id = "infra";
     to.type = "github";
     to.owner = "holbeh";
     to.repo = "infra";
