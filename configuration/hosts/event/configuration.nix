@@ -67,5 +67,12 @@
     config.nix.package.out
   ];
 
+  fileSystems."/root/.gnupg" = {
+    device = "/persist/data/gnupg-root";
+    fsType = "none";
+    options = [ "bind" ];
+    neededForBoot = true;
+  };
+
   system.stateVersion = "21.03";
 }
