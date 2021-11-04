@@ -15,10 +15,18 @@
         secretEnv = config.petabyte.secrets."greenlight".path;
     };
 
+    services.bigbluebutton.akka-apps.secretsFile = config.petabyte.secrets."bbb-akka-apps".path;
+    services.bigbluebutton.coturn.secretsFile = config.petabyte.secrets."bbb-web-turn".path;
+    services.bigbluebutton.web.secretsFile = config.petabyte.secrets."bbb-web.properties".path;
+
     systemd.services.bbb-greenlight.environment.DB_HOST = lib.mkForce "/var/run/postgresql";
 
-    petabyte.secrets."greenlight".owner = "greenlight";
     users.users.greenlight.extraGroups = [ "keys" ];
+    users.users.bbb-web.extraGroups = [ "keys" ];
+    petabyte.secrets."greenlight".owner = "greenlight";
+    petabyte.secrets."bbb-akka-apps".owner = "root";
+    petabyte.secrets."bbb-web-turn".owner = "bbb-web";
+    petabyte.secrets."bbb-web.properties".owner = "bbb-web";
 
     users.users.bbb-akka-apps.group = "bbb-akka-apps";
     users.groups.bbb-akka-apps = {};

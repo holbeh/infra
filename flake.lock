@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1635851369,
-        "narHash": "sha256-vRVSlI+wb9tJqCYvZqjI6/GtmGVgyeXga13G47bHDPk=",
+        "lastModified": 1636020052,
+        "narHash": "sha256-iDu1WSHgZ2CWEMISIQ1ceO9qjYn2lFFCov8SUXXJKFY=",
         "owner": "kloenk",
         "repo": "bbb4nix",
-        "rev": "c3f410ed7b0b8a652a5961ba9d331e7a64c20f4e",
+        "rev": "792e158a888da8a7c723c74a1e52d6a94c1cd988",
         "type": "github"
       },
       "original": {
