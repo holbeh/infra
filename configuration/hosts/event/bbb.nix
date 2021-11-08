@@ -12,6 +12,15 @@
     services.bigbluebutton.greenlight = {
         adminName = "Finn Behrens";
         adminEmail = "greenlight@kloenk.dev";
+        environment = {
+          SMTP_SERVER = "smtp.ionos.de";
+          SMPT_PORT = 587;
+          SMTP_DOMAIN = "smtp.ionos.de";
+          SMTP_USERNAME = "event@wass-er.com";
+          SMTP_AUTH = "plain";
+          SMTP_STARTTLS_AUTO = "true";
+          SMTP_SENDER = "event@wass-er.com";
+        };
         secretEnv = config.petabyte.secrets."greenlight".path;
     };
 
