@@ -29,7 +29,6 @@
     services.bigbluebutton.web.secretsFile = config.petabyte.secrets."bbb-web.properties".path;
 
     systemd.services.bbb-greenlight.environment.DB_HOST = lib.mkForce "/var/run/postgresql";
-    systemd.services.bbb-akka-apps.serviceConfig.PrivateTmp = lib.mkForce "false";
 
     users.users.greenlight.extraGroups = [ "keys" ];
     users.users.bbb-web.extraGroups = [ "keys" ];
