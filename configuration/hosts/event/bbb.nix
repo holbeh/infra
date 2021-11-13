@@ -6,12 +6,13 @@
 
     services.bigbluebutton.simple = {
         enable = true;
-        domain = "https://event.unterbachersee.de/bigbluebutton/";
+        domain = "event.unterbachersee.de";
         ips = [ "46.4.108.116" "2a01:4f8:141:4fc::2" ];
     };
     services.bigbluebutton.greenlight = {
         adminName = "Finn Behrens";
         adminEmail = "greenlight@kloenk.dev";
+        bbbEndpoint = lib.mkForce "https://event.unterbachersee.de/bigbluebutton/";
         environment = {
           SMTP_SERVER = "smtp.ionos.de";
           SMPT_PORT = "587";
