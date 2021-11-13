@@ -14,6 +14,10 @@
         adminEmail = "greenlight@kloenk.dev";
         bbbEndpoint = lib.mkForce "https://event.unterbachersee.de/bigbluebutton/";
         environment = {
+          SAFE_HOSTS = "event.unterbachersee.de";
+
+
+          # mail
           SMTP_SERVER = "smtp.ionos.de";
           SMPT_PORT = "587";
           SMTP_DOMAIN = "smtp.ionos.de";
