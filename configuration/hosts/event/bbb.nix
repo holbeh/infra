@@ -6,7 +6,7 @@
 
     services.bigbluebutton.simple = {
         enable = true;
-        domain = "event.unterbachersee.de";
+        domain = "https://event.unterbachersee.de/bigbluebutton/";
         ips = [ "46.4.108.116" "2a01:4f8:141:4fc::2" ];
     };
     services.bigbluebutton.greenlight = {
