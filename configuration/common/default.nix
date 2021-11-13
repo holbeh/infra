@@ -92,7 +92,7 @@
 
   environment.variables.EDITOR = "vim";
 
-  users.users.kloenk.shell = lib.mkOverride 75 pkgs.zsh;
+  users.users.kloenk.shell = lib.mkOverride 75 pkgs.bash;
 
   programs.zsh.enable = true;
   programs.mtr.enable = true;
