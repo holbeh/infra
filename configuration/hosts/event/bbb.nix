@@ -3,6 +3,31 @@
 {
 
     # TODO: red5 ram erhöhen (bbb default setting)
+    fileSystems."/var/lib/bbb-greenlight" = {
+      device = "/persist/data/greenlight";
+      fsType = "none";
+      options = [ "bind" ];
+    };
+    fileSystems."/var/lib/bbb-etherpad-lite" = {
+      device = "/persist/data/etherpad-lite";
+      fsType = "none";
+      options = [ "bind" ];
+    };
+    fileSystems."/var/lib/bigbluebutton" = {
+      device = "/persist/data/bigbluebutton";
+      fsType = "none";
+      options = [ "bind" ];
+    };
+    fileSystems."/var/lib/freeswitch" = {
+      device = "/persist/data/freeswitch";
+      fsType = "none";
+      options = [ "bind" ];
+    };
+    fileSystems."/var/lib/postgresql" = {
+      device = "/persist/data/postgresql";
+      fsType = "none";
+      options = [ "bind" ];
+    };
 
     services.bigbluebutton.simple = {
         enable = true;
