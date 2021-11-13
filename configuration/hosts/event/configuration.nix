@@ -34,9 +34,9 @@
   boot.initrd.network.enable = true;
 
   # delete files in /
-  boot.initrd.postDeviceCommands = lib.mkAfter ''
+  /*boot.initrd.postDeviceCommands = lib.mkAfter ''
     ${pkgs.xfsprogs}/bin/mkfs.xfs -m reflink=1 -f /dev/event/root
-  '';
+  '';*/
   fileSystems."/".device = lib.mkForce "/dev/event/root";
 
   networking.hostName = "event";
