@@ -58,7 +58,7 @@
   security.sudo.wheelNeedsPassword = false;
 
   nftables.enable = true;
-  nftables.forwardPolicy = lib.mkDefault "accept";
+  nftables.forwardPolicy = lib.mkDefault "drop";
 
   services.journald.extraConfig = "SystemMaxUse=2G";
 
