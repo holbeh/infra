@@ -67,7 +67,7 @@
     petabyte.secrets."bbb-web-turn".owner = "bbb-web";
     petabyte.secrets."bbb-web.properties".owner = "bbb-web";
 
-    users.users.bbb-akka-apps.group = "bbb-akka-apps";
+/*    users.users.bbb-akka-apps.group = "bbb-akka-apps";
     users.groups.bbb-akka-apps = {};
 
     users.users.bbb-akka-fsesl.group = "bbb-akka-fsesl";
@@ -85,9 +85,6 @@
     users.users.bbb-webrtc-sfu.group = "bbb-webrtc-sfu";
     users.groups.bbb-webrtc-sfu = {};
 
-    users.users.freeswitch.group = "freeswitch";
-    users.groups.freeswitch = {};
-
     users.users.greenlight.group = "greenlight";
     users.groups.greenlight = {};
 
@@ -95,5 +92,5 @@
     users.groups.kurento = {};
 
     users.users.turnserver.group = "turnserver";
-    users.groups.turnserver = {};
+    users.groups.turnserver = {};*/
 }
