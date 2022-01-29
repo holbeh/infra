@@ -53,6 +53,10 @@
         };
         secretEnv = config.petabyte.secrets."greenlight".path;
     };
+    services.bigbluebutton.freeswitch = {
+      publicIP = "46.4.108.116";
+      publicIP6 = "2a01:4f8:141:4fc::2";
+    };
 
     services.bigbluebutton.akka-apps.secretsFile = config.petabyte.secrets."bbb-akka-apps".path;
     services.bigbluebutton.coturn.secretsFile = config.petabyte.secrets."bbb-web-turn".path;
@@ -67,7 +71,7 @@
     petabyte.secrets."bbb-web-turn".owner = "bbb-web";
     petabyte.secrets."bbb-web.properties".owner = "bbb-web";
 
-/*    users.users.bbb-akka-apps.group = "bbb-akka-apps";
+    users.users.bbb-akka-apps.group = "bbb-akka-apps";
     users.groups.bbb-akka-apps = {};
 
     users.users.bbb-akka-fsesl.group = "bbb-akka-fsesl";
@@ -92,5 +96,5 @@
     users.groups.kurento = {};
 
     users.users.turnserver.group = "turnserver";
-    users.groups.turnserver = {};*/
+    users.groups.turnserver = {};
 }
